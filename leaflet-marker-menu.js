@@ -5,7 +5,7 @@
         }
     }
 
-    L.MarkerMenu = L.Class.extend({
+    L.MarkerMenu = (L.Layer ? L.Layer : L.Class)({
         includes: L.Mixin.Events,
 
         options: {
